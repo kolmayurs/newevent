@@ -126,8 +126,8 @@
 							$eventGenre = ucfirst(preg_replace('/\s+/', '', $eventGenre1));
 							$time = strtotime($eventDate);
 							$eventymd = date('Ymd',$time);
-							$eventl = substr(date('l',$time),0,2);
-							$eventF = substr(date('M',$time),0,2);
+							$eventl = substr(date('l',$time),0,3);
+							$eventF = substr(date('M',$time),0,3);
 							$eventd = date('d',$time);
 							$campaignSourceArray = array(' ','+','_','-',':','|',"'", '"',',','(',')');
 							$campaignSource = str_replace($campaignSourceArray, '', $eventName);
